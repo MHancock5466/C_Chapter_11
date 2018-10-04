@@ -6,7 +6,7 @@ using namespace std;
 
 int main() {
 	//declare variables
-	int points = 0;
+	int points;
 	double pointsPossible = 0;
 	
 	//get total possible points
@@ -15,6 +15,7 @@ int main() {
 		cin >> pointsPossible;
 		if (pointsPossible < 0)
 			points = -1;
+		else points = 0;
 		
 		//declare arrays and fill with data
 		double minPoints[5] = { 0.9*pointsPossible, 0.8*pointsPossible, 0.7*pointsPossible, 0.6*pointsPossible };
